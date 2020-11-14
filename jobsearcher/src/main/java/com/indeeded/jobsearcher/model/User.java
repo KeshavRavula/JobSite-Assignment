@@ -1,17 +1,26 @@
 package com.indeeded.jobsearcher.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+@Table
+@Entity
 public class User {
 
     @Id
     @GeneratedValue
+    @Column
     private String id;
+    @Column
     private String name;
+    @Column
     private long phoneNum;
+    @Column
+    private String email;
+    @Column
     private String organization;
+    @Column
     private String role;
+
 
     public String getId() {
         return id;
@@ -53,12 +62,21 @@ public class User {
         this.role = role;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", phoneNum=" + phoneNum +
+                ", email='" + email + '\'' +
                 ", organization='" + organization + '\'' +
                 ", role='" + role + '\'' +
                 '}';

@@ -22,6 +22,8 @@ public class MainController {
 
     @RequestMapping("/login")
     public String loginPage(Model model){
+
+       // model.addAttribute("userObject",User);
         return "login";
     }
 
