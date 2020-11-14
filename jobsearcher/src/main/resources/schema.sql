@@ -1,0 +1,9 @@
+
+    CREATE TABLE USER (
+    id INT AUTO_INCREMENT  PRIMARY KEY,
+     name VARCHAR(50) NOT NULL,
+    phone INT(8) NOT NULL,
+     email VARCHAR(50) NOT NULL,
+      org VARCHAR(50) NOT NULL,
+       role VARCHAR(50) NOT NULL
+    );
