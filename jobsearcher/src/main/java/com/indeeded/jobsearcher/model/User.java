@@ -2,23 +2,22 @@ package com.indeeded.jobsearcher.model;
 
 import javax.persistence.*;
 
-@Table
 @Entity
+//@Table
 public class User {
-
     @Id
-    @GeneratedValue
-    @Column
+    //@GeneratedValue
+    //@Column
     private String id;
-    @Column
+    //@Column
     private String name;
-    @Column
+    //@Column
     private long phoneNum;
-    @Column
+    //@Column
     private String email;
-    @Column
+    //@Column
     private String organization;
-    @Column
+    //@Column
     private String role;
 
 
