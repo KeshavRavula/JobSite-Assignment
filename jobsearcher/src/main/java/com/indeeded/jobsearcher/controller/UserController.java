@@ -3,8 +3,6 @@ package com.indeeded.jobsearcher.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.indeeded.jobsearcher.Repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
@@ -37,7 +35,7 @@ public class UserController
     }
     //creating post mapping that post the student detail in the database
     @PostMapping("/user")
-    private int saveStudent(@RequestBody User user)
+    private int saveUser(@RequestBody User user)
     {
         userService.saveUser(user);
         return Integer.parseInt(user.getId());

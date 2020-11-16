@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/styles.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/user.js"></script>
     <title>Indeeder</title>
 </head>
 <body>
@@ -12,14 +14,14 @@
     <table>
         <tr>
             <td>User:</td>
-            <td><input type='text' name='username' value=''></td>
+            <td><input type='text' id="uid" name='username' value=''></td>
         </tr>
         <tr>
             <td>Password:</td>
-            <td><input type='password' name='password' /></td>
+            <td><input type='password' id="password" name='password' /></td>
         </tr>
         <tr>
-            <td><input name="submit" type="submit" value="submit" /></td>
+            <td><input name="submit" id="login" type="submit" value="submit" /></td>
         </tr>
     </table>
 </form>
